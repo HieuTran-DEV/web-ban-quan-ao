@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>TP Shop</title>
+</head>
+
+<body onload="trangThai();">
+    <!-- On Top -->
+    <button id="button1" type="button" onclick="Top()"><i class="fas fa-chevron-up"></i></button>
+    
+    <header id="f-header">
+        <nav class="container">
+            <ul>
+                <li>
+                    <a href="index.html"><img src="hinh/logo.jpg" alt="" width="80px"></a>
+                </li>
+                <li class="search"><input type="text" placeholder="Bạn muốn tìm gì..." class="search-input"> <i class="search-i fas fa-search "></i></li>
+                <li><a href="DangNhap.html"><button class="user-cart user" id="dangnhap"><i class="fas fa-user"></i> Đăng Nhập</button></a></li>
+                <li id="taiKhoan"></li>                <li ><a href="dangky.html"><button class="user-cart user" id="dangky"><i class="fas fa-user"></i> Đăng Kí</button></a></li>
+                <li><button class="user-cart user" id="dangxuat" onclick="dangXuat()">Đăng Xuất</button></li>
+                <li><a href="Cart.html"><button class="user-cart"><i class="fas fa-shopping-cart"></i> Giỏ Hàng</button></a></li>
+                
+            </ul>
+        </nav>
+        <!-- -----------------------------MEMU----------------------------- -->
+        <section>
+            <nav class="menu">
+                    <ul>
+                        <li><a href="">ÁO THUN&nbsp;<i class="fas fa-angle-down"></i></a>
+                            <ul>
+                                <li><a href="aothundongian.html">Áo Thun đơn giản</a> </li>
+                                <li><a href="aothun3lo.html">Áo Thun 3 Lỗ</a> </li>
+                                <li><a href="aothucotru.html">Áo Thun Cổ Trụ</a> </li>
+                                <li><a href="aothunsweeter.html">Áo Thun Sweater</a> </li>
+                            </ul>
+                        </li>
+                        <li><a href="">ÁO KHOÁC&nbsp;<i class="fas fa-angle-down"></i></a>
+                            <ul>
+                                <li><a href="aokhoacdongian.html">Áo Khoác đơn giản</a> </li>
+                                <li><a href="aokhoacthethao.html">Áo Khoác Thể Thao</a> </li>
+                                <li><a href="aokhoachoodie.html">Áo Khoác Hoodie</a> </li>
+                            </ul>
+                        </li>
+                        <li><a href="">ÁO SƠ MI&nbsp;<i class="fas fa-angle-down"></i></a>
+                            <ul>
+                                </br>
+                                <li><a href="aosomitaydai.html">Áo Sơ Mi Tay Dài</a> </li>
+                                <li><a href="aosomitayngan.html">Áo Sơ Mi Tay Ngắn</a> </li>
+                            </ul>
+                        </li>
+                        <li><a href="">QUẦN DÀI&nbsp;<i class="fas fa-angle-down"></i></a>
+                            <ul>
+                                <li><a href="quanjooger.html">Quần Jooger</a> </li>
+                                <li><a href="quanjean.html">Quần Jean</a> </li>
+                                <li><a href="quantay.html">Quần Tây</a> </li>
+                                <li><a href="quanongrong.html">Quần Ống Rộng</a> </li>
+                            </ul>
+                        </li>
+                        <li><a href="">QUẦN SHORT&nbsp;<i class="fas fa-angle-down"></i></a>
+                            <ul>
+                                <li><a href="quanshortthun.html">Quần Short Thun</a> </li>
+                                <li><a href="quanshortjean.html">Quần Short Jean</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+            </nav>
+        </section>
+    </header>
+    <!-- ------------------------------------ -->
+    
+    
+    <div id="slideshow">
+        <div class="slide-wrapper">
+            <div class="slide"><img src="hinh/hinh1.jpg"></div>
+            <div class="slide"><img src="hinh/hinh2.jpg"></div>
+            <div class="slide"><img src="hinh/hinh3.jpg"></div>
+            <div class="slide"><img src="hinh/hinh4.jpg"></div>
+        </div>
+    </div>
+    
+    <div class="col-1">
+        <h2>TOP SẢN PHẨM BÁN CHẠY</h2>
+    </div>
+    <div class="content">
+        <div class="items">
+            <figure>
+                <a href="aokhoacdongian.html"><img src="hinh/spbanchay1.jpg"></a>
+            </figure>
+        </div>
+        <div class="items">
+            <figure>
+                <a href="aokhoacdongian.html"><img src="hinh/spbanchay2.jpg"></a>
+            </figure>
+        </div>
+        <div class="items">
+            <figure>
+                <a href="aokhoacdongian.html"><img src="hinh/spbanchay3.jpg"></a>
+            </figure>
+        </div>
+        <div class="items">
+            <figure>
+                <a href="aokhoacdongian.html"><img src="hinh/spbanchay4.jpg"></a>
+            </figure>
+        </div>
+        <div class="items">
+            <figure>
+                <a href="aokhoacdongian.html"><img src="hinh/spbanchay5.jpg"></a>
+            </figure>
+        </div>
+    </div>
+    <div>
+        <div class="content">
+            <div class="items">
+                <figure>
+                    <a href="aothundongian.html"><img src="hinh/spbanchay5.jpg"></a>
+                </figure>
+            </div>
+            <div class="items">
+                <figure>
+                    <a href="aothundongian.html"><img src="hinh/spbanchay6.jpg"></a>
+                </figure>
+            </div>
+            <div class="items">
+                <figure>
+                    <a href="aothundongian.html"><img src="hinh/spbanchay7.jpg"></a>
+                </figure>
+            </div>
+            <div class="items">
+                <figure>
+                    <a href="aothundongian.html"><img src="hinh/spbanchay8.jpg"></a>
+                </figure>
+            </div>
+        </div>
+        <div class="col-1">
+            </br>
+            <h2>HÀNG MỚI VỀ</h2>
+        </div>
+        <div class="content">
+            <div class="items">
+                <figure>
+                    <a href="aosomitaydai.html"><img src="hinh/hangmoive1.jpg"></a>
+                </figure>
+            </div>
+            <div class="items">
+                <figure>
+                    <a href="aosomitaydai.html"><img src="hinh/hangmoive2.jpg"></a>
+                </figure>
+            </div>
+            <div class="items">
+                <figure>
+                    <a href="aosomitaydai.html"><img src="hinh/hangmoive3.jpg"></a>
+                </figure>
+            </div>
+            <div class="items">
+                <figure>
+                    <a href="aosomitaydai.html"><img src="hinh/hangmoive4.jpg"></a>
+                </figure>
+            </div>
+        </div>
+        <div>
+            <div class="content">
+                <div class="items">
+                    <figure>
+                        <a href="quanjean.html"><img src="hinh/hangmoive5.jpg"></a>
+                    </figure>
+                </div>
+                <div class="items">
+                    <figure>
+                        <a href="quanjean.html"><img src="hinh/hangmoive6.jpg"></a>
+                    </figure>
+                </div>
+                <div class="items">
+                    <figure>
+                        <a href="quanjean.html"><img src="hinh/hangmoive7.jpg"></a>
+                    </figure>
+                </div>
+                <div class="items">
+                    <figure>
+                        <a href="quanjean.html"><img src="hinh/hangmoive8.jpg"></a>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <!-------------------------------Footer----------------------------->
+    <footer class="footer">
+        <a href="index.html"><img src="hinh/logo.jpg" alt="" width="80px"></a>
+            <div>
+                <p>
+                    Chúng tôi luôn lắng nghe bạn! <br>
+                    Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến đóng góp từ khách hàng để có thể nâng cấp trải nghiệm dịch vụ và sản phẩm tốt hơn nữa.
+                </p>
+            </div>
+            <div class="column-footer">
+                <div class="row-footer">
+                    <ul>
+                        <li>THÔNG TIN LIÊN HỆ</li>
+                        <li><em class="fas fa-phone-alt"> Hotline: 0908 *** ***</em></li>
+                        <li><em class="fas fa-envelope"> Email: thien***@gmail.com</em></li>
+                        
+                    </ul>
+                </div>
+                <div class="row-footer">
+                    <ul>
+                        <li>VỀ CHÚNG TÔI</li>
+                        <li><a href="GioiThieu.html">Giới thiệu</a></li>
+                        <li><a href="LienHe.html">Liên hệ</a></li>
+                        <li><a href="HoiDap.html">Hỏi đáp</a></li>
+                    </ul>
+                </div>
+                <div class="row-footer">
+                    <ul>
+                        <li>KÊT NỐI VỚI CHÚNG TÔI</li>
+                        <li style="font-size: 30px">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                            <a href="#" class="fa fa-youtube"></a>
+                            <a href="#" class="fab fa-tiktok"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy-right">
+                <p>&copy; Nhóm 123</p>
+            </div>
+    </footer>
+<!---------------------------------END------------------------------>
+<script src="script.js"></script>
+<script src="taiKhoan.js"></script>
+</body>
+
+</html>

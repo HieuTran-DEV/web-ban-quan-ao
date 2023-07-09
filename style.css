@@ -1,0 +1,517 @@
+
+/*=============================header=========================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li {
+    list-style: none;
+}
+header {
+    background-color: rgba(0, 0, 0, 0.678);
+    border-bottom: 1px solid gray;
+    box-shadow: 1px 0px 10px;
+    text-align: center;
+    
+}
+
+.container {
+    background-color: rgb(27, 27, 27);
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* ---------------------- HEADER ----------------------------- */
+#f-header{
+    position:fixed;
+    z-index: 999;
+    top:0px;
+    right:0px;
+    left:0px;
+    transition: all 1s ease;
+}
+
+body #f-header {
+    visibility: visible;
+    opacity: 1;
+    transition: all .4s;
+}
+
+body.fit-menu #f-header {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.search {
+    position: relative;
+}
+
+.search-input {
+    height: 25px;
+    width: 600px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 5px;
+    outline: none;
+}
+
+.search-i {
+    position: absolute;
+    font-size: 15px;
+    right: 10px;
+    color: #333;
+    line-height: 26px;
+    cursor: pointer;
+}
+
+.user{
+    width: 150px;
+}
+
+.user-cart {
+    height: 30px;
+    margin: 0px;
+    padding: 0 15px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgb(123, 118, 118);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.user-cart:hover {
+    background-color: rgb(113, 107, 107);   
+}
+
+.menu{
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgb(75, 75, 75);
+    width: 100%;
+	height: auto;
+	background-color: rgb(29, 29, 29);
+}
+
+
+.menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu ul li{
+	position: relative;
+}
+
+.menu ul li a{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+	text-decoration: none;
+    text-align: left;
+	display: block;
+	line-height: 35px;
+	padding: 0 10px;
+}
+
+.menu ul li a:hover{
+	background-color: rgb(158, 152, 152);
+    color: #333;
+    transition: all 0.2s ease;
+}
+
+.menu ul ul {
+	position: absolute;
+    display: initial;
+	margin: 0;
+}
+
+.menu ul ul li {
+	width: 170px;
+    height: auto;
+}
+
+.menu ul ul li a{
+	background-color: rgb(63, 58, 58);
+	padding: 0 10px;
+}
+
+.menu ul ul, .menu ul ul ul{
+	visibility: hidden;
+}
+
+.menu ul li:hover >ul{
+	visibility: visible;
+}
+
+
+/* ------------------ BUTTON ON TOP ----------------------------- */
+#button1 {
+    z-index: 999;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    width: 45px;
+    height: 40px;
+    margin: 400px 20px 0px 95%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-image: linear-gradient(145deg, rgb(63, 63, 63) 40%, rgb(0, 0, 0) 60%);
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    border: 2px solid gray;
+    position: fixed;
+}
+/*=============================Zoom-in=========================*/
+.zoomin {
+    float: left;
+    width: 500px;
+}
+.zoomin img{
+    margin: 20px;
+    width: 100%;
+}
+figure {
+    overflow: hidden;
+  }
+.zoomin figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.zoomin figure:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+/*=============================gay=========================*/
+.gay{
+    background-color:rgb(148, 147, 147) ;
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+.gay ul{
+    display: flex;
+    color: black;
+}
+/*==============================slideshow==========================*/
+#slideshow {
+    overflow: hidden;
+    height: 400px;
+    max-width: 100%;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+.slide-wrapper {
+    width: 2900px;
+    animation: slide 10s ease infinite;
+}
+.slide {
+    float: left;
+    height: 400px;
+    width: 700px;
+}
+
+@keyframes slide {
+    20% {margin-left: 0px;}
+    30% {margin-left: -700px;}
+    50% {margin-left: -700px;}
+    60% {margin-left: -1400px;}
+    80% {margin-left: -1400px;}
+}
+
+/*==============================slideshow==========================*/
+#slideshowao {
+    overflow: hidden;
+    height: 600px;
+    max-width: 100%;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+.slideao {
+    float: left;
+    height: 150px;
+    width: 300px;
+}
+
+@keyframes slideao {
+    20% {margin-left: 0px;}
+    30% {margin-left: -300px;}
+    50% {margin-left: -500px;}
+    60% {margin-left: -700px;}
+    80% {margin-left: -900px;}
+
+}
+
+/*=============================row=========================*/
+.col-1{
+    text-align: center;
+    margin: auto;
+    color: grey;
+}
+.col-1th{
+    float: left;
+    max-width: auto;
+    margin: auto;
+}
+  .image img{
+    width: 1400px;
+  }
+  .gia{
+    text-align: center;
+    color: red;
+  }
+ /* -------------------------------Footer----------------------------- */
+
+footer {
+    display: block;
+    background-color: rgb(27, 27, 27);
+    max-width: 100%;
+    clear: both;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+footer h4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 80px;
+    color: white;
+    margin-bottom: 0px;
+}
+
+
+footer p {
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    margin-top: 0px;
+}
+
+.column-footer {
+    border-top: 1px solid white;
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row-footer {
+    padding: 0px 10px;
+    margin: 20px 0pc;
+    font-size: 15px; 
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.row-footer:nth-child(1),.row-footer:nth-child(3) {
+    margin-left: 50px;
+}
+
+
+.row-footer ul li {
+    padding: 4px 0px;
+}
+
+.row-footer ul li a,em{
+
+    padding-left: 10px;
+    color: rgb(226, 226, 226);
+}
+.copy-right {
+    border-top: 1px solid rgb(82, 82, 82);
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+    color: black;
+    font-weight: bold;
+}
+/*=============================content=========================*/
+.content{
+    max-width: 100% fit-content;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 320px 320px 320px 320px;
+    grid-template-rows: 600px 600px 600px;
+    display: flex;
+    
+}
+.items img{
+    width: 260px;
+    height: 340px;
+}
+.items figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.items figure:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+/*=============================xem-chi-tiết=========================*/
+.small-content{
+    position: relative;
+    margin-left: 20px;
+}
+.imagee{
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.middle{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%,-50%);
+}
+.small-content:hover .imagee{
+    opacity: 0.3;
+}
+.small-content:hover .middle{
+    opacity: 1;
+}
+.text{
+    font-size: 20px;
+}
+.text a{
+    color: black;
+}
+/*=============================Giỏ-Hàng=========================*/
+.left-column{
+    width: 50%;
+    height: fit-content;
+    margin-bottom: 30px;
+    float: left;
+   
+}
+.right-column{
+    width: 50%;
+    height: fit-content;
+    margin-bottom: 30px;
+    float: right;
+    
+}
+.imageee img{
+    width: 100px ;
+    height: 120px;
+}
+.imageee th{
+    width: 100px;
+}
+span{
+    color: red;
+}
+.xoa td a:hover{
+    color: rgb(0, 26, 255);
+}
+.xoa td a{
+    color: black;
+}
+/**************************Keke*******************/
+.tt{
+    margin-left: 20px;
+}
+button.keke{
+    border: rgb(177, 174, 174);
+    padding: 5px 10px;
+    width: 260px;
+    height: 35px;
+    background-color: rgb(177, 174, 174);
+    border-radius: 5px;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+button.keke:hover{
+    background: rgb(0, 81, 255);
+    color:white;
+    font-size: 18px;
+}
+button.hehe{
+    border: rgb(177, 174, 174);
+    padding: 5px 10px;
+    width: 260px;
+    height: 35px;
+    background-color: rgb(177, 174, 174);
+    border-radius: 5px;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+button.hehe:hover{
+    background: orange;
+    color:white;
+    font-size: 18px;
+}
+/*=============================Lịch-sử-đơn-hàng=========================*/
+button.lsdonhang{
+    border: rgb(177, 174, 174);
+    padding: 5px 10px;
+    width: 150px;
+    height: 40px;
+    background-color: rgb(177, 174, 174);
+    border-radius: 5px;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+button.lsdonhang:hover{
+    background: orange;
+    color:white;
+    font-size: 18px;
+}
+
+/* -------------------------------ĐĂNG KÝ TÀI KHOẢN----------------------------- */
+.form-dangky{
+    border: none;
+    width: fit-content; 
+    margin: auto;
+    margin-top: 130px;
+    margin-bottom: 50px; 
+    padding: 20px 50px;
+    background:rgba(7, 7, 7,0.8);
+}
+.input{
+    padding: 13px 20px;
+    border-radius: 5px;
+    width: 390px;
+    margin: 10px auto;
+
+}
